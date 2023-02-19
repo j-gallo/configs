@@ -33,6 +33,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
 Plugin 'briancollins/vim-jst'
 Plugin 'tpope/vim-rails'
+Plugin 'junegunn/fzf'
 " Plugin 'eslint/eslint'
 " Plugin 'scrooloose/syntastic'
 
@@ -81,8 +82,8 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-"ag settings
 nnoremap <Leader>a :Ags 
+nnoremap <Leader>t :FZF<CR>
 
 let g:jsx_ext_required = 0
 
@@ -144,6 +145,8 @@ set softtabstop=0
 set expandtab
 syntax on							" Syntax highlighting
 filetype indent on
+
+:colorscheme hackerman
 
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
